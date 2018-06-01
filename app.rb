@@ -5,6 +5,11 @@ Dotenv.load
 
 set :erb, layout: :layout
 
+# client = Nexmo::Client.new(
+#   key: ENV['NEXMO_API_KEY'],
+#   secret: ENV['NEXMO_API_SECRET']
+# )
+
 get '/' do
   erb :index
 end
